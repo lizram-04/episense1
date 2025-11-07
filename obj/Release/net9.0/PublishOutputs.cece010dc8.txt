@@ -1,0 +1,8 @@
+C:\Users\tyuty\Desktop\Escritorio\Proyectos\Proyecto u Lisset\episense\publish\episense.exe
+C:\Users\tyuty\Desktop\Escritorio\Proyectos\Proyecto u Lisset\episense\publish\appsettings.Development.json
+C:\Users\tyuty\Desktop\Escritorio\Proyectos\Proyecto u Lisset\episense\publish\appsettings.json
+C:\Users\tyuty\Desktop\Escritorio\Proyectos\Proyecto u Lisset\episense\publish\Data\registros.json
+C:\Users\tyuty\Desktop\Escritorio\Proyectos\Proyecto u Lisset\episense\publish\episense.dll
+C:\Users\tyuty\Desktop\Escritorio\Proyectos\Proyecto u Lisset\episense\publish\episense.deps.json
+C:\Users\tyuty\Desktop\Escritorio\Proyectos\Proyecto u Lisset\episense\publish\episense.runtimeconfig.json
+C:\Users\tyuty\Desktop\Escritorio\Proyectos\Proyecto u Lisset\episense\publish\episense.pdb
