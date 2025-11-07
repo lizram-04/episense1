@@ -1,0 +1,36 @@
+﻿<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/inicio/registrar.css" />
+
+<div class="register-container" data-bs-theme="light">
+    <div class="logo">  
+        <img src="../images/cerebro-blanco.png" class="image-cerebro" alt="Cerebro" width="60">
+        <p id="label-epis">Episense</p>
+    </div>
+    <div class="register-title">REGISTRO</div>
+    
+    <form method="post" autocomplete="off" asp-action="Ingresar" asp-controller="Home">
+        <div class="form-group">
+            <label for="NombreCompleto">NOMBRE COMPLETO:</label>
+            <input type="text" id="NombreCompleto" name="NombreCompleto" required>
+        </div>
+
+        <div class="form-group">
+            <label for="Correo">CORREO:</label>
+            <input type="email" id="Correo" name="Correo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="Usuario">USUARIO:</label>
+            <input type="text" id="Usuario" name="Usuario" required>
+        </div>
+
+        <div class="form-group">
+            <label for="Contrasena">CONTRASEÑA:</label>
+            <input type="password" id="Contrasena" name="Contrasena" required>
+        </div>
+
+        <button type="submit" class="btn-continue">CONTINUAR</button>
+    </form>
+</div>
+
+<script src="~/js/inicio/registrar.js"></script>
