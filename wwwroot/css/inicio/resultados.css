@@ -1,0 +1,70 @@
+.resultado-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw; /* 🔹 agregado: asegura centrado horizontal completo */
+  background: url(../../images/desert.jpg);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;  
+}
+
+.nivel-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* 🔹 agregado: centra verticalmente los niveles dentro */
+  position: relative;
+  width: 200px;
+  margin: 0 auto; /* 🔹 agregado: centra horizontalmente */
+}
+
+.nivel {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 6px;
+  text-align: center;
+  width: 100%;
+  margin: 3px 0;
+  padding: 6px 0;
+  position: relative;
+  font-weight: bold;
+}
+
+.nivel-actual {
+  background-color: #a86fc2;
+  box-shadow: 0 0 10px #fff;
+}
+
+.cerebro {
+  position: absolute;
+  left: -50px;
+  width: 40px;
+}
+
+.trofeo {
+  margin-bottom: 10px;
+}
+
+.resultado-final {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn-volver {
+  margin-top: 15px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
