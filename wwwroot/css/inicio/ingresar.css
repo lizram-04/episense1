@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Berlin Sans FB Demi Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Berlin Sans FB Demi Bold'), url('../../fonts/BRLNSDB.woff') format('woff');
+}
+
+body {
+    margin: 0;
+    font-family: 'Berlin Sans FB Demi Bold';
+}
+
+.contenedor-pantalla {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    justify-content: space-between;
+}
+
+.bloque-superior {
+    background-color: #ba8cc4;
+    height: 65%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom-left-radius: 15px 15px;
+    border-bottom-right-radius: 15px 15px;
+    cursor: pointer;
+}
+
+.bloque-superior:hover {
+  background-color: #ba8cc4ee;
+}
+.bloque-superior:active,
+.bloque-superior:focus {
+  background-color: #ba8cc4ee;
+  outline: none;
+}
+
+.espacio {
+    height: 5%;
+}
+
+.bloque-inferior {
+    background-color: #814a8e;
+    height: 35%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px 15px;
+    border-top-right-radius: 15px 15px;
+    cursor: pointer;
+}
+
+.bloque-inferior:hover {
+  background-color: #824a8eec;
+}
+.bloque-inferior:active,
+.bloque-inferior:focus {
+  background-color: #824a8eec;
+  outline: none;
+}
+
+.bloque-superior hr {
+    width: 80px;
+    border: none;
+    border-top: 4px solid white;
+    margin: 15px 0 25px 0;
+    border-radius: 10px;
+}
+
+.bloque-superior h1 {
+    text-align: center;
+    font-size: 4.5rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.bloque-inferior h1 {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.texto-kit {
+    font-size: 22px;
+}
+
+.image-cerebro {
+    margin-bottom: 40px;
+}
