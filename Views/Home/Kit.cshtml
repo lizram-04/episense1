@@ -1,0 +1,100 @@
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/inicio/kit.css" />
+
+<div class="logo logo-inicio">  
+    <img id="inicio_cerebro" src="../images/cerebro-morado.png" class="image-cerebro" alt="Cerebro" width=30">
+    <label class="label-epis" id="inicio_titulo">Episense</label>
+</div>
+<div id="contenedor">
+  <div id="cronometro">
+
+    <button class="button-principales button-principal-quiz" id="btn-quiz">CONECTA QUIZ</button>
+    <button class="button-principales button-principal-kit" id="btn-kit">KIT EN ACCIÓN</button>
+
+    <h1 class="roboto">CRÓNOMETRO</h1>
+    <p class="roboto p-roboto">(Para medir el tiempo de la crisis)</p>    
+    <div class="timer">
+        <div class="time">
+            <button type="btn" class="button-cronometro" id="button">
+                INICIAR
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                </svg>           
+            </button>
+            <button id="reset" class="button-cronometro">
+                REINICIAR
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+                  <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+                </svg>
+            </button>
+        </div>
+        <svg width="300" height="300">
+            <circle id="circle1" cx="150" cy="150" r="120"></circle>
+            <circle id="circle2" cx="150" cy="150" r="120"></circle>
+        </svg>
+    </div>
+    <div id="contenedor-tiempo">
+        <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>
+    </div>
+  </div>
+
+  <diV id="pasos_a_seguir">
+    <h1 class="h1test">PASOS A SEGUIR</h1>
+
+    <div class="video-container">
+      <h1 class="video-title">EN CRISIS DE CONVULSIÓN</h1>
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+          title="Video de YouTube"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <div class="video-container2">
+      <h2 class="video-title2">EN CRISIS DE AUSENCIA</h2>
+      <div class="video-wrapper2">
+        <iframe 
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+          title="Video de YouTube"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <div class="acudir-container">
+      <h1 class="acudir-title">¿CUÁNDO ACUDIR AL SERVICIO DE URGENCIA?</h1>
+      <div class="acudir-wrapper">
+        <p>
+          1. Es el primer episodio en una persona sin antecedentes de epilepsia.      
+        </p>
+        <p>
+          2. La crisis dura más de 5 minutos o se repite en un corto periodo de tiempo.    
+        </p>     
+        <p>
+          3. La persona no recupera la conciencia o se comporta de forma inusual después de una hora.   
+        </p>    
+        <p>
+          4. Se produce una lesión durante la crisis.
+        </p>    
+        <p>
+          5. La persona está embarazada.  
+        </p>    
+        <p>
+          6. Se presenta una crisis focal que se prolonga por más de 10 minutos.  
+        </p>  
+
+      </div>
+      <button class="btn btn-primary" id="btn-descargar">DESCARGAR</button>
+    </div>
+
+
+  </diV>
+
+</div>
+
+<script src="~/js/inicio/kit.js"></script>

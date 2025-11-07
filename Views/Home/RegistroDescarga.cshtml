@@ -1,0 +1,256 @@
+<link rel="stylesheet" href="~/css/inicio/registrodescarga.css" />
+
+
+<div class="acudir-container logo-inicio">
+    <img src="../images/cerebro-blanco.png" alt="Cerebro" width=50">
+    <label class="label-epis" id="inicio_titulo">Episense</label>
+</div>
+
+<div id="contenedor">
+    <diV id="pasos_a_seguir">
+        <h1 class="h1test">REGISTRO DE CRISIS DE EPILEPSIA</h1>
+        <div class="acudir-wrapper">
+            <p>
+                Si usted ha sido testigo de una
+                crisis epiléptica ocurrida a algún
+                alumno/a es muy importante la
+                información que
+                pueda aportar a la familia y equipo
+                médico. Intente registrar lo que
+                sucede antes, durante y después del
+                episodio, tratando de incluir todos
+                los detalles que sean posibles.     
+            </p>
+        </div>
+
+    </diV>
+    <diV id="formulario">
+        <form method="post" autocomplete="off" asp-action="Index" asp-controller="Home">
+            <div class="form-group">
+                <label for="NombreCompleto">NOMBRE ALUMNO/A:</label>
+                <input type="text" id="NombreCompleto" name="NombreCompleto" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Rut">RUT:</label>
+                <input type="text" id="Rut" name="Rut" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Carrera">CARRERA:</label>
+                <input type="text" id="Carrera" name="Carrera" required>
+            </div>
+
+            <div class="form-group">
+                <label for="NombreTestigo">NOMBRE DEL TESTIGO:</label>
+                <input type="text" id="NombreTestigo" name="NombreTestigo" required>
+            </div>
+            <div class="form-group">
+                <label for="FechaCrisis">FECHA DE LA CRISIS:</label>
+                <input type="date" id="FechaCrisis" name="FechaCrisis" required>
+            </div>
+            <div class="form-group">
+                <label for="HoraInicioCrisis">HORA INICIO DE LA CRISIS:</label>
+                <input type="time" id="HoraInicioCrisis" name="HoraInicioCrisis" required>
+            </div>
+            <div class="form-group">
+                <label for="HoraTerminoCrisis">HORA TERMINO DE LA CRISIS:</label>
+                <input type="time" id="HoraTerminoCrisis" name="HoraTerminoCrisis" required>
+            </div>
+
+            <h1 class="h1test2">Antes de la crisis:</h1>
+
+            <div class="form-group">
+                <label for="actividad">¿Qué actividad se encontraba realizando el alumno/a?</label>
+                <textarea rows="5" cols="30" id="actividad" name="actividad" required> </textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="señal">¿Se percató de alguna señal o cambio en el comportamiento antes de la crisis?</label>
+                <textarea rows="5" cols="30" id="señal" name="señal" required> </textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="recabar">Al recabar información en torno a la crisis y la situación del alumno, podría identificar si se pudo haber asociado a algún factor desencadenante, como:</label>
+                <textarea rows="5" cols="30" id="recabar" name="recabar" required> </textarea>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="farmaco">
+                <label class="form-check-label" for="farmaco">
+                    Interrupción del tratamiento farmacológico o cambios en la terapia
+                </label>
+            </div>      
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="sueno">
+                <label class="form-check-label" for="sueno">
+                   Privación de sueño y/o trastornos del sueño
+                </label>
+            </div>      
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="estres">
+                <label class="form-check-label" for="estres">
+                    Estrés emocional
+                </label>
+            </div>      
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="luces">
+                <label class="form-check-label" for="luces">
+                    Exposición a luces intermitentes
+                </label>
+            </div>      
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="alcohol">
+                <label class="form-check-label" for="alcohol">
+                    Consumo de alcohol
+                </label>
+            </div>      
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="embarazo">
+                <label class="form-check-label" for="embarazo">
+                    Menstruación, embarazo o cambios hormonales
+                </label>
+            </div>             
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="enfermedades">
+                <label class="form-check-label" for="enfermedades">
+                    Uso de otros fármacos Estado febril, infecciones Otras enfermedades
+                </label>
+            </div>        
+
+            <div class="form-group">
+                <label for="otro_crisis">Otro:</label>
+                <textarea rows="5" cols="30" id="otro_crisis" name="otro_crisis"> </textarea>
+            </div>            
+
+            <h1 class="h1test2">Durante la crisis, consignar si hubo:</h1>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="confusion">
+                <label class="form-check-label" for="confusion">
+                    Alteración de conciencia, confusión
+                </label>
+            </div>      
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="comprender">
+                <label class="form-check-label" for="comprender">
+                   Dificultades para hablar y comprender
+                </label>
+            </div>      
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="percepcion">
+                <label class="form-check-label" for="percepcion">
+                    Cambios en el pensamiento, el recuerdo, las emociones, las percepciones
+                </label>
+            </div>      
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="parpadeo">
+                <label class="form-check-label" for="parpadeo">
+                    Cambios en la mirada: perdida, desviada, parpadeo o giro de los ojos
+                </label>
+            </div>      
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flacido">
+                <label class="form-check-label" for="flacido">
+                    Cambios en el tono muscular: el cuerpo se puso rígido o flácido
+                </label>
+            </div>      
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="movimiento">
+                <label class="form-check-label" for="movimiento">
+                    Movimientos o sacudidas, giros del cuerpo, caída brusca
+                </label>
+            </div>             
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="automatismo">
+                <label class="form-check-label" for="automatismo">
+                    Automatismos y movimientos
+                    repetitivos: morderse los labios, masticar, tragar, tocarse la ropa, frotarse las manos, zapatear, vestirse o desvestirse.
+                </label>
+            </div>        
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="camina">
+                <label class="form-check-label" for="camina">
+                    Camina, deambula, corre
+                </label>
+            </div>  
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="respiracion">
+                <label class="form-check-label" for="respiracion">
+                    Cambios en el color de la piel, sudoración, respiración
+                </label>
+            </div>  
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="esfinter">
+                <label class="form-check-label" for="esfinter">
+                    Pérdida del control de esfínter
+                </label>
+            </div>  
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="vomito">
+                <label class="form-check-label" for="vomito">
+                    Vómitos
+                </label>
+            </div>                                      
+            <div class="form-group">
+                <label for="otro_durante_crisis">Otro:</label>
+                <textarea rows="5" cols="30" id="otro_durante_crisis" name="otro_durante_crisis"> </textarea>
+            </div>        
+
+            <h1 class="h1test2">Después de la crisis:</h1>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="tacto">
+                <label class="form-check-label" for="tacto">
+                    Responde al hablarle o al tacto
+                </label>
+            </div>      
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="memoria_evento">
+                <label class="form-check-label" for="memoria_evento">
+                    Recuerda la crisis, tiene memoria del evento
+                </label>
+            </div>             
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="lugar_conciencia">
+                <label class="form-check-label" for="lugar_conciencia">
+                    Recuperación progresiva de conciencia, reconoce su nombre, lugar, tiempo
+                </label>
+            </div>        
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="sensacion_confusion">
+                <label class="form-check-label" for="sensacion_confusion">
+                    Sensación de confusión
+                </label>
+            </div>  
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="entumecimiento">
+                <label class="form-check-label" for="entumecimiento">
+                    Se observa debilidad o entumecimiento
+                </label>
+            </div>  
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="comportamiento">
+                <label class="form-check-label" for="comportamiento">
+                    Manifiesta cambios en el estado de ánimo y/o en el comportamiento
+                </label>
+            </div>  
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="necesita">
+                <label class="form-check-label" for="necesita">
+                    Refiere cansancio, necesita dormir
+                </label>
+            </div>       
+
+            <h1 class="h1test2">Realiza una breve descripción de la crisis:</h1>
+            <div class="form-group">
+                <textarea rows="5" cols="30" id="descripcion_crisis" name="descripcion_crisis" required> </textarea>
+            </div>        
+            <button type="submit" class="btn-continue">GUARDAR FORMULARIO</button>
+
+            <div id="numero_emergencia">
+             <p>Numero de emergencias: 131</p>
+                <img src="../images/logo-epilepsia.png" alt="Cerebro" width=100">
+            </div>
+        </form>
+    </diV>   
+</diV>

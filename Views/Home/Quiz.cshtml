@@ -1,0 +1,272 @@
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/inicio/quiz.css" />
+
+<div class="logo logo-inicio">  
+    <img id="inicio_cerebro" src="../images/cerebro-morado.png" class="image-cerebro" alt="Cerebro" width="30">
+    <label class="label-epis" id="inicio_titulo">Episense</label>
+</div>
+
+<div id="contenedor">
+  <div id="cronometro">
+
+    <button class="button-principales button-principal-quiz" id="btn-quiz">CONECTA QUIZ</button>
+    <button class="button-principales button-principal-kit" id="btn-kit">KIT EN ACCIÓN</button>
+
+  </div>
+
+  <diV id="pasos_a_seguir">
+    <div class="acudir-container">
+        <h1 class="acudir-title">¿QUÉ ES LA EPILEPSIA GENERALIZADA?</h1>
+        <div class="acudir-wrapper">
+            <p>
+                Es un tipo de epilepsia que afecta ambos hemisferios cerebrales desde el inicio de la crisis, provocando una descarga eléctrica
+                anormal bilateral. Siempre implica
+                alteración de la conciencia y puede
+                manifestarse con movimientos
+                involuntarios, rigidez, caídas o ausencias
+                breves. Su origen suele ser genético o
+                desconocido.     
+            </p>
+        </div>
+    </div>
+
+    <div class="acudir-container-video">
+      <h1 class="acudir-title">¿CUÁNDO ACUDIR AL SERVICIO DE URGENCIA?</h1>
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+          title="Video de YouTube"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <div class="acudir-container-video">
+      <h1 class="acudir-title">ESTO ES LO QUE DEBES HACER</h1>
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+          title="Video de YouTube"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <div class="acudir-container">
+        <h1 class="acudir-title2">CONECTA QUIZ</h1>
+        <div class="acudir-wrapper2">
+            <p>
+                ¡Pon a prueba tu conocimiento y responde correctamente!  
+            </p>
+        </div>   
+
+        <h1 class="acudir-title">EPILEPSIA GENERALIZADA</h1>
+
+        <div class="acudir-wrapper">
+            <form method="post" autocomplete="off" asp-action="Result" asp-controller="Home">
+                <div class="form-group carousel-select-container">
+                    <label class="label-purpura" for="carousel1">
+                    1.Cuando un estudiante se cae, el cuerpo se tensa y luego se sacude con fuerza, probablemente está teniendo:
+                    </label>
+                    <div class="carousel-wrapper" id="carousel1">
+                        <div class="carousel-option">Una crisis de desconexión breve</div>
+                        <div class="carousel-option">Una crisis convulsiva generalizada</div>
+                        <div class="carousel-option">Un mareo repentino</div>
+                        <div class="carousel-option">Un temblor por nervios</div>
+                    </div>
+                    <input type="hidden" name="Respuestas[0]" id="respuesta1" />
+                </div>     
+
+                <div class="form-group carousel-select-container">
+                    <label class="label-purpura" for="carousel2">
+                        2. ¿Qué es lo primero que debe
+                        hacer el profesor al presenciar una
+                        crisis con convulsiones?                    
+                    </label>
+                    <div class="carousel-wrapper" id="carousel2">
+                        <div class="carousel-option">Alejar objetos peligrosos y proteger la cabeza del estudiante</div>
+                        <div class="carousel-option">Sostenerlo firmemente para que no se golpee</div>
+                        <div class="carousel-option">Tratar de detener los movimientos</div>
+                        <div class="carousel-option">Llamarlo hasta que reaccione</div>                        
+                    </div>
+                    <input type="hidden" name="Respuestas[1]" id="respuesta2" />
+                </div>
+                <div class="form-group carousel-select-container">
+                    <label class="label-purpura" for="carousel3">
+                        3. ¿Cuánto tiempo puede durar
+                        una crisis con convulsiones sin
+                        que sea una urgencia?               
+                    </label>
+                    <div class="carousel-wrapper" id="carousel3">
+                        <div class="carousel-option">Menos de 5 minutos.</div>
+                        <div class="carousel-option">Hasta 10 minutos si no se mueve mucho</div>
+                        <div class="carousel-option">Mientras respire, no hay peligro</div>
+                        <div class="carousel-option">Mientras no haya heridas, no es urgente</div>                        
+                    </div>
+                    <input type="hidden" name="Respuestas[2]" id="respuesta3" />
+                </div>
+                <div class="form-group carousel-select-container">
+                    <label class="label-purpura" for="carousel4">
+                        4. ¿En qué momento se debe
+                        llamar a urgencias en una crisis
+                        con convulsiones?
+                    </label>
+                    <div class="carousel-wrapper" id="carousel4">
+                        <div class="carousel-option">Si el alumno se pone pálido después</div>
+                        <div class="carousel-option">Si no recuerda lo que pasó</div>
+                        <div class="carousel-option">Si dura más de 5 minutos, se repite o no recupera la conciencia</div>
+                        <div class="carousel-option">Si el alumno se cansa</div>                        
+                    </div>
+                    <input type="hidden" name="Respuestas[3]" id="respuesta4" />
+                </div>
+                <div class="form-group carousel-select-container">
+                    <label class="label-purpura" for="carousel5">
+                        5. ¿Qué acción puede empeorar la situación durante una crisis convulsiva? 
+                    </label>
+                    <div class="carousel-wrapper" id="carousel5">
+                        <div class="carousel-option">Dejarlo acostado de lado</div>     
+                        <div class="carousel-option">Intentar abrirle la boca o detener sus movimientos.</div>
+                        <div class="carousel-option">Aflojarle la ropa del cuello</div>
+                        <div class="carousel-option">Contar el tiempo que dura</div>                        
+                    </div>
+                    <input type="hidden" name="Respuestas[4]" id="respuesta5" />
+                </div>
+                <div class="form-group carousel-select-container">
+                    <label class="label-purpura" for="carousel6">
+                        6.Cuando la crisis termina, ¿qué debe hacerse?
+                    </label>
+                    <div class="carousel-wrapper" id="carousel6">
+                        <div class="carousel-option">Darle agua o un dulce para reponerse</div>     
+                        <div class="carousel-option">Levantarlo de inmediato para evitar sueño</div>
+                        <div class="carousel-option">Preguntarle qué sintió para mantenerlo despierto</div>
+                        <div class="carousel-option">Colocar al estudiante de lado y dejarlo descansar</div>                        
+                    </div>
+                    <input type="hidden" name="Respuestas[5]" id="respuesta6" />
+                </div>
+                <div class="form-group carousel-select-container">
+                    <label class="label-purpura" for="carousel7">
+                        7. Si el estudiante se lastima al caer durante la crisis, lo correcto es:
+                    </label>
+                    <div class="carousel-wrapper" id="carousel7">
+                        <div class="carousel-option">Aplicar hielo y continuar la clase</div>     
+                        <div class="carousel-option">Esperar a que despierte y preguntar si puede moverse</div>
+                        <div class="carousel-option">Pedir ayuda médica aunque la crisis haya terminado</div>
+                        <div class="carousel-option">Dejarlo descansar sin revisarlo</div>                        
+                    </div>
+                    <input type="hidden" name="Respuestas[6]" id="respuesta7" />
+                </div>
+                <div class="form-group carousel-select-container">
+                    <label class="label-purpura" for="carousel8">
+                        8. Después de una crisis convulsiva, es normal que el alumno:
+                    </label>
+                    <div class="carousel-wrapper" id="carousel8">
+                        <div class="carousel-option">No recuerde quién es</div>     
+                        <div class="carousel-option">Quede confundido o muy cansado por un rato</div>
+                        <div class="carousel-option">Se levante rápido y siga hablando</div>
+                        <div class="carousel-option">Comience otra crisis al instante</div>                        
+                    </div>
+                    <input type="hidden" name="Respuestas[7]" id="respuesta8" />
+                </div>
+                <div class="form-group carousel-select-container">
+                    <label class="label-azul" for="carousel9">
+                        9. Un estudiante se queda mirando fijo unos segundos y luego sigue escribiendo como si nada. Probablemente tuvo:
+                    </label>
+                    <div class="carousel-wrapper" id="carousel9">
+                        <div class="carousel-option carousel-option2">Una crisis de ausencia</div>     
+                        <div class="carousel-option carousel-option2">Una distracción pasajera</div>
+                        <div class="carousel-option carousel-option2">Un mareo leve</div>
+                        <div class="carousel-option carousel-option2">Un temblor interno</div>                         
+                    </div>
+                    <input type="hidden" name="Respuestas[8]" id="respuesta9" />
+                </div>
+                <div class="form-group carousel-select-container">
+                    <label class="label-azul" for="carousel10">
+                        10. ¿Qué detalle ayuda a reconocer una crisis de ausencia?
+                    </label>
+                    <div class="carousel-wrapper" id="carousel10">
+                        <div class="carousel-option carousel-option2">El alumno no responde aunque se le hable</div>     
+                        <div class="carousel-option carousel-option2">Tiembla levemente las manos.</div>
+                        <div class="carousel-option carousel-option2">Suspira o mueve la cabeza.</div>
+                        <div class="carousel-option carousel-option2">Sonríe o parpadea muy rápido</div>                         
+                    </div>
+                    <input type="hidden" name="Respuestas[9]" id="respuesta10" />
+                </div>
+                <div class="form-group carousel-select-container">
+                    <label class="label-azul" for="carousel11">
+                        11. Durante una crisis de ausencia, el alumno:
+                    </label>
+                    <div class="carousel-wrapper" id="carousel11">
+                        <div class="carousel-option carousel-option2">Se tensa y empieza a temblar</div>     
+                        <div class="carousel-option carousel-option2">Se desconecta por pocos segundos sin moverse ni caer</div>
+                        <div class="carousel-option carousel-option2">Pierde fuerza y se desploma</div>
+                        <div class="carousel-option carousel-option2">Cambia de color y respira con dificultad</div>                          
+                    </div>
+                    <input type="hidden" name="Respuestas[10]" id="respuesta11" />
+                </div>
+                <div class="form-group carousel-select-container">
+                    <label class="label-azul" for="carousel12">
+                        12. Si el alumno tiene varios episodios de ausencia en un mismo día, el profesor debe:
+                    </label>
+                    <div class="carousel-wrapper" id="carousel12">
+                        <div class="carousel-option carousel-option2">Esperar que pase solo sin registrar nada</div>     
+                        <div class="carousel-option carousel-option2">Hablarle fuerte para que vuelva</div>
+                        <div class="carousel-option carousel-option2">Anotar los momentos y avisar al apoderado o especialista</div>
+                        <div class="carousel-option carousel-option2">Interrumpir la clase para despertarlo</div>                         
+                    </div>
+                    <input type="hidden" name="Respuestas[11]" id="respuesta12" />
+                </div>
+                <div class="form-group carousel-select-container">
+                    <label class="label-azul" for="carousel13">
+                        13. ¿Cuándo se debe llamar a urgencias en una crisis de ausencia?
+                    </label>
+                    <div class="carousel-wrapper" id="carousel13">
+                        <div class="carousel-option carousel-option2">Si se distrae una o dos veces al día</div>     
+                        <div class="carousel-option carousel-option2">Si los episodios son muy seguidos, duran más de lo normal o van acompañados de caídas</div>
+                        <div class="carousel-option carousel-option2">Si el alumno parpadea mucho</div>
+                        <div class="carousel-option carousel-option2">Si se nota cansado después de clases</div>                        
+                    </div>
+                    <input type="hidden" name="Respuestas[12]" id="respuesta13" />
+                </div>
+                <div class="form-group carousel-select-container">
+                    <label class="label-azul" for="carousel14">
+                        14.¿Qué NO se debe hacer durante una crisis de ausencia?
+                    </label>
+                    <div class="carousel-wrapper" id="carousel14">
+                        <div class="carousel-option carousel-option2">Mantenerlo sentado y observar</div>     
+                        <div class="carousel-option carousel-option2">Tratar de “despertar” al alumno con toques o palabras</div>
+                        <div class="carousel-option carousel-option2">Esperar unos segundos a que pase</div>
+                        <div class="carousel-option carousel-option2">Anotar la hora del episodio</div>                         
+                    </div>
+                    <input type="hidden" name="Respuestas[13]" id="respuesta14" />
+                </div>
+                <div class="form-group carousel-select-container">
+                    <label class="label-azul" for="carousel15">
+                        15. Durante cualquier tipo de crisis, el rol del profesor es principalmente:
+                    </label>
+                    <div class="carousel-wrapper" id="carousel15">
+                        <div class="carousel-option carousel-option2">Llamar de inmediato a emergencias</div>     
+                        <div class="carousel-option carousel-option2">Moverlo a un lugar más cómodo.</div>
+                        <div class="carousel-option carousel-option2">Darle algo para oler o comer.</div>
+                        <div class="carousel-option carousel-option2">Mantener la calma, proteger al estudiante y evitar que se lastime</div>                        
+                    </div>
+                    <input type="hidden" name="Respuestas[14]" id="respuesta15" />
+                </div>   
+
+                <div class="acudir-container"> 
+                    <button type="submit" class="btn btn-primary" id="btn-descargar">FINALIZAR QUIZ</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+
+
+  </diV>
+
+</div>
+
+<script src="~/js/inicio/quiz.js"></script>
