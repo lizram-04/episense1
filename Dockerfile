@@ -22,4 +22,4 @@ ENV ASPNETCORE_URLS=http://+:$PORT
 EXPOSE $PORT
 
 # Comando para ejecutar la app
-ENTRYPOINT ["dotnet", "Episense.dll"]
+ENTRYPOINT ["dotnet", "episense.dll"]
