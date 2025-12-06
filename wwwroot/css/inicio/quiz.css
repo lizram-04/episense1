@@ -163,6 +163,12 @@ body{
     border-radius: 2px;
 }
 
+.roboto{
+    font-family: 'Roboto Regular' !important;
+    text-align: center;
+    line-height: 1.27;
+}
+
 .acudir-container-video {
     text-align: center;
     margin: 0 auto;
@@ -181,6 +187,7 @@ body{
     align-items: center;
     margin-top: 0px;
     max-width: 700px;
+    margin-bottom: -30px;
 }
 
 .acudir-wrapper {
@@ -282,17 +289,24 @@ form {
 }
 
 .carousel-option {
-    flex: 0 0 auto;
+    flex: 0 0 160px;
     scroll-snap-align: center;
     background-color: #93599f;
     color: white;
-    padding: 15px 40px;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 18px;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform 0.25s ease, background-color 0.25s ease;
     user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: normal;
+    word-wrap: break-word;
+    min-height: 100px;
+    font-family: "Roboto Regular";
 }
 
 .carousel-option2 {
@@ -311,6 +325,16 @@ form {
 .carousel-option:hover {
     background-color: #b56cc2;
     transform: scale(1.05);
+}
+
+.carousel-option.correcta {
+    background-color: #4CAF50 !important; /* Verde */
+    color: white;
+}
+
+.carousel-option.incorrecta {
+    background-color: #E53935 !important; /* Rojo */
+    color: white;
 }
 
 .carousel-option.selected {

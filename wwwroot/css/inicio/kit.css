@@ -190,7 +190,7 @@ circle{
     margin: 0 auto;
     width: 100vw;
     padding: 20px;
-    background-color: #798cad;
+    background-color: #1d2c3f;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -289,6 +289,25 @@ circle{
     border-radius: 2px;
 }
 
+.acudir-title-sin-barra {
+    position: relative;
+    font-size: 22px;
+    color: #44526b;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    display: inline-block;
+    width: 100%;
+}
+
+.acudir-title-sin-barra::after {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #44526b;
+    border-radius: 2px;
+}
 
 .acudir-container {
     margin: 0 auto;
@@ -306,6 +325,8 @@ circle{
     align-items: flex-start;
     text-align: left;
     margin-left: 10px;
+    font-family: "Roboto Regular";
+    width: 90%;
 }
 
 #btn-descargar{
@@ -313,11 +334,15 @@ circle{
     margin-bottom: 40px;
     width: 80%;
     padding: 12px;
-    background-color: #1d2c3f;
+    background-color: #6d9cda;
     color: white;
     border: none;
     font-size: 25px;
     padding: 7px 10px 7px 10px;
     cursor: pointer;
     max-width: 400px;
+}
+
+.acudir-wrapper p{
+    line-height: 1.2;
 }

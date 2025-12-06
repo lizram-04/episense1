@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("episense")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc9bb175047e23eb98116d59009871755d396d6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("episense")]
 [assembly: System.Reflection.AssemblyTitleAttribute("episense")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
