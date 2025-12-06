@@ -1,40 +1,31 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {},
-    "net9.0/win-x64": {}
+    "net9.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\tyuty\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Benja\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tyuty\\Desktop\\Escritorio\\Proyectos\\Proyecto u Lisset\\episense\\episense.csproj",
+      "projectUniqueName": "C:\\Users\\Benja\\OneDrive\\Desktop\\BENJA\\proyecto\\episense.csproj",
       "projectName": "episense",
-      "projectPath": "C:\\Users\\tyuty\\Desktop\\Escritorio\\Proyectos\\Proyecto u Lisset\\episense\\episense.csproj",
-      "packagesPath": "C:\\Users\\tyuty\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tyuty\\Desktop\\Escritorio\\Proyectos\\Proyecto u Lisset\\episense\\obj\\",
+      "projectPath": "C:\\Users\\Benja\\OneDrive\\Desktop\\BENJA\\proyecto\\episense.csproj",
+      "packagesPath": "C:\\Users\\Benja\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Benja\\OneDrive\\Desktop\\BENJA\\proyecto\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\tyuty\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Benja\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -77,12 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
-      }
-    },
-    "runtimes": {
-      "win-x64": {
-        "#import": []
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -30,11 +30,23 @@ document.querySelectorAll('.carousel-wrapper').forEach((wrapper, index) => {
 
     // Permitir seleccionar
     wrapper.querySelectorAll('.carousel-option').forEach(option => {
+
         option.addEventListener('click', () => {
-            wrapper.querySelectorAll('.carousel-option').forEach(o => o.classList.remove('selected'));
+            wrapper.querySelectorAll('.carousel-option').forEach(o => {
+                o.classList.remove('selected', 'correcta', 'incorrecta');
+            });
             option.classList.add('selected');
+
+            const esCorrecta = option.dataset.correcta === "true";
+
+            if (esCorrecta) {
+                option.classList.add('correcta');
+            } else {
+                option.classList.add('incorrecta');
+            }
+
             if (inputHidden) {
-                inputHidden.value = option.textContent.trim(); // guarda la respuesta seleccionada
+                inputHidden.value = option.textContent.trim();
             }
         });
     });
